@@ -1,0 +1,129 @@
+
+/*Blocs BEM*/
+body{
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+header {
+    height: 100px;
+    background-color: $clr_primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & h1{
+        color: $clr_secondary;
+        font-size: 4em;
+        font-family: $font_7;
+    }
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    margin:2em 4% 2em 4%; 
+    justify-content: space-between;
+    align-items: center;
+    & article{/*1article = 1 menu*/
+        width: 300px;
+        height: 400px;
+        margin:2% 4% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & p2{
+            display: block;
+        }
+        & p3{
+            display: block;
+        }
+        &.menu_1{
+            background-color: $clr_menu_1;
+            & .icon{
+                font-size: 3em;
+                color:linear-gradient(to right,#f15861,#f78f6a);
+            }
+            & p2{
+                 font-family: $font_6;
+                 font-size: 2.5em;
+                text-shadow: 0px 0px 1px $clr_txt_menu_1;
+             }
+             & p3{
+                 font-family: $font_6;
+                 font-size: 1.5em; 
+                 text-shadow: 0px 0px 1px $clr_txt_menu_1;
+             }
+        }
+        &.menu_2{
+            background-color: $clr_menu_2;
+             & p2{
+                 font-family: $font_6;
+                 font-size: 2.5em;
+                 color:$clr_txt_menu_2;
+             }
+             & p3{
+                 font-family: $font_6;
+                 font-size: 1.5em; /* FF3.6-15 */
+                 @include gradient_right($clr_grad_purple_1,$clr_grad_purple_2);
+             }
+        }
+        &.menu_3{
+            background-color: $clr_menu_3;
+             & p2{
+                 font-family: $font_4;
+                 font-size: 2.5em;
+                 color:$clr_txt_menu_3;
+             }
+             & p3{
+                 font-family: $font_1;
+                 font-size: 1.5em; /* FF3.6-15 */
+                 @include gradient_right_bottom($clr_grad_blue_1,$clr_grad_blue_2);
+             }
+        }
+        &.menu_4{
+            background-color: $clr_menu_4;
+             & p2{
+                 font-family: $font_4;
+                 font-size: 2.5em;
+                 color:$clr_txt_menu_4;
+             }
+             & p3{
+                 font-family: $font_2;
+                 font-size: 1.5em; /* FF3.6-15 */
+                 @include gradient_right_bottom($clr_grad_green_1,$clr_grad_green_2);
+             }
+        }
+    }
+}
+aside{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: $clr-primary;
+    & h2{
+        color: $clr_secondary;
+        font-size: 2.5em;
+        margin: 0.3em 0.3em;
+        font-family: $font_7;
+    }
+}
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $clr_primary;
+    margin-top: 10px;
+    & p{
+        color: $clr_secondary;
+        margin: 10px;
+        font-size: 1.6em;
+        font-family: $font_7;
+        
+    }
+}

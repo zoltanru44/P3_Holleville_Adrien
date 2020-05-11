@@ -1,0 +1,17 @@
+
+/*variables, fonctions, mixin*/
+/*linerar gradient from left to right*/
+@mixin gradient_right($clr_1,$clr_2){
+    display: inline-block;
+                 background-image: linear-gradient(to right,$clr_1,$clr_2);
+                 color:transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+}/*linerar gradient from top left to bottom right*/
+@mixin gradient_right_bottom($clr_1,$clr_2){
+    display: inline-block;
+                 background-image: linear-gradient(to bottom right,$clr_1,$clr_2);
+                 color:transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+}

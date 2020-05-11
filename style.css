@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* Scss Document */
+/*polices, normes, couleurs*/
+/*green*/
+/*yellow*/
+/*gradient colors*/
+/*font*/
+/*variables, fonctions, mixin*/
+/*linerar gradient from left to right*/
+/*linerar gradient from top left to bottom right*/
+/*Blocs BEM*/
+body {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto; }
+
+header {
+  height: 100px;
+  background-color: #579c87;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header h1 {
+    color: #fdcb46;
+    font-size: 4em;
+    font-family: "Montserrat", sans-serif; }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  margin: 2em 4% 2em 4%;
+  justify-content: space-between;
+  align-items: center; }
+  main article {
+    /*1article = 1 menu*/
+    width: 300px;
+    height: 400px;
+    margin: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main article p2 {
+      display: block; }
+    main article p3 {
+      display: block; }
+    main article.menu_1 {
+      background-color: #fcdfdb; }
+      main article.menu_1 .icon {
+        font-size: 3em;
+        color: linear-gradient(to right, #f15861, #f78f6a); }
+      main article.menu_1 p2 {
+        font-family: "Noto Serif", serif;
+        font-size: 2.5em;
+        text-shadow: 0px 0px 1px #f78f6a; }
+      main article.menu_1 p3 {
+        font-family: "Noto Serif", serif;
+        font-size: 1.5em;
+        text-shadow: 0px 0px 1px #f78f6a; }
+    main article.menu_2 {
+      background-color: #fcecfa; }
+      main article.menu_2 p2 {
+        font-family: "Noto Serif", serif;
+        font-size: 2.5em;
+        color: #c77412; }
+      main article.menu_2 p3 {
+        font-family: "Noto Serif", serif;
+        font-size: 1.5em;
+        /* FF3.6-15 */
+        display: inline-block;
+        background-image: linear-gradient(to right, #f15861, #905bfd);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text; }
+    main article.menu_3 {
+      background-color: #f4eaea; }
+      main article.menu_3 p2 {
+        font-family: "Kalam", cursive;
+        font-size: 2.5em;
+        color: #2b91f8; }
+      main article.menu_3 p3 {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.5em;
+        /* FF3.6-15 */
+        display: inline-block;
+        background-image: linear-gradient(to bottom right, #0431df, #0887fb);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text; }
+    main article.menu_4 {
+      background-color: #e3ebe3; }
+      main article.menu_4 p2 {
+        font-family: "Kalam", cursive;
+        font-size: 2.5em;
+        color: #72bf56; }
+      main article.menu_4 p3 {
+        font-family: "Kaushan Script", cursive;
+        font-size: 1.5em;
+        /* FF3.6-15 */
+        display: inline-block;
+        background-image: linear-gradient(to bottom right, #3d9339, #bfff7e);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text; }
+
+aside {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #579c87; }
+  aside h2 {
+    color: #fdcb46;
+    font-size: 2.5em;
+    margin: 0.3em 0.3em;
+    font-family: "Montserrat", sans-serif; }
+
+footer {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #579c87;
+  margin-top: 10px; }
+  footer p {
+    color: #fdcb46;
+    margin: 10px;
+    font-size: 1.6em;
+    font-family: "Montserrat", sans-serif; }
+
+/*spécificités des pages*/
+/*Blocs BEM indépendants*/
+.icon {
+  display: inline-block;
+  background-image: linear-gradient(to right, #f15861, #f78f6a);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; }
