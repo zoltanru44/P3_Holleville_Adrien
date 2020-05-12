@@ -6,7 +6,7 @@ Error: Undefined variable: "$clr_primary".
 6:     margin: 20px auto;
 7: }
 8: header {
-9:     height: 100px;
+9:     height: 150px;
 10:     background-color: $clr_primary;
 11:     display: flex;
 12:     justify-content: center;
@@ -61,4 +61,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver 2020/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$clr_primary\".\A         on line 10 of A:\Documents\Adrien\Code Ad'\Projets Openclassrooms\Projet 3\scss\_layout.scss\A \A 5:     max-width: 1200px;\A 6:     margin: 20px auto;\A 7: }\A 8: header {\A 9:     height: 100px;\A 10:     background-color: $clr_primary;\A 11:     display: flex;\A 12:     justify-content: center;\A 13:     align-items: center;\A 14:     \A 15:     & h1{"; }
+  content: "Error: Undefined variable: \"$clr_primary\".\A         on line 10 of A:\Documents\Adrien\Code Ad'\Projets Openclassrooms\Projet 3\scss\_layout.scss\A \A 5:     max-width: 1200px;\A 6:     margin: 20px auto;\A 7: }\A 8: header {\A 9:     height: 150px;\A 10:     background-color: $clr_primary;\A 11:     display: flex;\A 12:     justify-content: center;\A 13:     align-items: center;\A 14:     \A 15:     & h1{"; }

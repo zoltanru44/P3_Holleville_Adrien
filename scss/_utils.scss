@@ -15,3 +15,12 @@
                 -webkit-background-clip: text;
                 background-clip: text;
 }
+/*properties menu animations*/
+@mixin prop_anim_menu{
+    transition: transform 400ms;
+}
+/*animation hover menu*/
+@mixin anim_hover_menu{
+    transform: scale(1.2);
+        opacity: 0.8;
+}
