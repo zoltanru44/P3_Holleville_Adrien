@@ -1,123 +1,25 @@
-
 /*Blocs BEM*/
-body{
+
+body {
     width: 80%;
     max-width: 1200px;
     margin: 20px auto;
 }
+
 header {
     height: 150px;
     background-color: $clr_primary;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    & h1{
+    & h1 {
         color: $clr_secondary;
         font-size: 4em;
         font-family: $font_7;
     }
 }
-main{
-    display: flex;
-    flex-wrap: wrap;
-    margin:2em 4% 2em 4%; 
-    max-width: 1000px;
-    justify-content: space-around;
-    align-items: center;
-    & article{/*1article = 1 menu*/
-        width: 300px;
-        height: 400px;
-        margin: 2% 4% ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        &.menu_1{
-            background-color: $clr_menu_1;
-            & .icon{
-                font-size: 3em;
-                color:linear-gradient(to right,#f15861,#f78f6a);
-                @include prop_anim_menu;
-                
-            }
-            & p2{
-                 font-family: $font_3;
-                 font-size: 2.5em;
-                 text-shadow: 0px 0px 2px $clr_txt_menu_1;
-                @include prop_anim_menu;
-             }
-             & p3{
-                 font-family: $font_4;
-                 font-size: 1.5em; 
-                 text-shadow: 0px 0px 1px $clr_txt_menu_1;
-                 @include prop_anim_menu;
-             }
-            &:hover > * {
-                @include anim_hover_menu;
-            }
-        }
-        &.menu_2{
-            background-color: $clr_menu_2;
-             & p2{
-                 font-family: $font_6;
-                 font-size: 2.5em;
-                 color:$clr_txt_menu_2;
-                 font-weight: 600;
-                 @include prop_anim_menu;
-             }
-             & p3{
-                 font-family: $font_6;
-                 font-size: 1.5em; /* FF3.6-15 */
-                 @include gradient_right($clr_grad_purple_1,$clr_grad_purple_2);
-                 @include prop_anim_menu;
-             }
-            &:hover > * {
-                @include anim_hover_menu;
-            }
-        }
-        &.menu_3{
-            background-color: $clr_menu_3;
-             & p2{
-                 font-family: $font_4;
-                 font-size: 2.5em;
-                 color:$clr_txt_menu_3;
-                 @include prop_anim_menu;
-             }
-             & p3{
-                 font-family: $font_1;
-                 font-size: 2em; /* FF3.6-15 */
-                 @include gradient_right_bottom($clr_grad_blue_1,$clr_grad_blue_2);
-                 @include prop_anim_menu;
-             }
-            &:hover > * {
-                @include anim_hover_menu;
-            }
-        }
-        &.menu_4{
-            background-color: $clr_menu_4;
-            padding: 0;
-             & p2{
-                 font-family: $font_4;
-                 font-size: 2.5em;
-                 color:$clr_txt_menu_4;
-                 @include prop_anim_menu;
-             }
-             & p3{
-                 font-family: $font_2;
-                 font-size: 1.5em; /* FF3.6-15 */
-                 @include gradient_right_bottom($clr_grad_green_1,$clr_grad_green_2);
-                 @include prop_anim_menu;
-             }
-            &:hover > * {
-                @include anim_hover_menu;
-            }
-        }
-    }
-}
 
-aside{
+aside {
     width: 50%;
     margin: auto auto 100px auto;
     display: flex;
@@ -125,14 +27,15 @@ aside{
     align-items: center;
     border-radius: 10px;
     background-color: $clr-primary;
-    & h2{
+    & h2 {
         color: $clr_secondary;
         font-size: 2.5em;
         margin: 0.3em 0.3em;
         font-family: $font_7;
     }
 }
-footer{
+
+footer {
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -143,11 +46,10 @@ footer{
     bottom: 0;
     left: auto;
     width: 80%;
-    & p{
+    & p {
         color: $clr_secondary;
         margin: 10px;
         font-size: 1.6em;
         font-family: $font_7;
-        
     }
 }

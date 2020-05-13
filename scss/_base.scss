@@ -1,7 +1,13 @@
+/*fonts, norms, colors*/
 
-/*polices, normes, couleurs*/
-$clr_primary: #579c87; /*green*/
-$clr_secondary: #fdcb46; /*yellow*/
+$clr_primary: #579c87;
+
+/*green*/
+
+$clr_secondary: #fdcb46;
+
+/*yellow*/
+
 $clr_menu_1: #fcdfdb;
 $clr_menu_2: #fcecfa;
 $clr_menu_3: #f4eaea;
@@ -12,6 +18,7 @@ $clr_txt_menu_3: #2b91f8;
 $clr_txt_menu_4: #72bf56;
 
 /*gradient colors*/
+
 $clr_grad_purple_1: #f15861;
 $clr_grad_purple_2: #905bfd;
 $clr_grad_red_1:#f15861;
@@ -21,14 +28,19 @@ $clr_grad_blue_2:#0887fb;
 $clr_grad_green_1:#3d9339;
 $clr_grad_green_2:#bfff7e;
 
- /*font*/   
-$font_1:'Dancing Script', cursive;
-$font_2:'Kaushan Script', cursive;
-$font_3:'Balsamiq Sans', cursive;
-$font_4:'Kalam', cursive;
-$font_5:'Pangolin', cursive;
-$font_6:'Playfair Display', serif;
-$font_7:'Montserrat', sans-serif;
+/*font*/
 
-   
-
+$font_1:'Dancing Script',
+cursive;
+$font_2:'Kaushan Script',
+cursive;
+$font_3:'Balsamiq Sans',
+cursive;
+$font_4:'Kalam',
+cursive;
+$font_5:'Pangolin',
+cursive;
+$font_6:'Playfair Display',
+serif;
+$font_7:'Montserrat',
+sans-serif;

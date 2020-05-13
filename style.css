@@ -1,167 +1,301 @@
 @charset "UTF-8";
 /* Scss Document */
-/*polices, normes, couleurs*/
+/*fonts, norms, colors*/
 /*green*/
 /*yellow*/
 /*gradient colors*/
 /*font*/
-/*variables, fonctions, mixin*/
-/*linerar gradient from left to right*/
-/*linerar gradient from top left to bottom right*/
+/*variables, functions, mixin*/
+/*linear gradient from left to right*/
+/*linear gradient from top left to bottom right*/
 /*properties menu animations*/
 /*animation hover menu*/
 /*Blocs BEM*/
 body {
   width: 80%;
   max-width: 1200px;
-  margin: 20px auto; }
+  margin: 20px auto;
+}
 
 header {
   height: 150px;
   background-color: #579c87;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  header h1 {
-    color: #fdcb46;
-    font-size: 4em;
-    font-family: "Montserrat", sans-serif; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2em 4% 2em 4%;
-  max-width: 1000px;
-  justify-content: space-around;
-  align-items: center; }
-  main article {
-    /*1article = 1 menu*/
-    width: 300px;
-    height: 400px;
-    margin: 2% 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0; }
-    main article.menu_1 {
-      background-color: #fcdfdb; }
-      main article.menu_1 .icon {
-        font-size: 3em;
-        color: linear-gradient(to right, #f15861, #f78f6a);
-        transition: transform 400ms; }
-      main article.menu_1 p2 {
-        font-family: "Balsamiq Sans", cursive;
-        font-size: 2.5em;
-        text-shadow: 0px 0px 2px #f78f6a;
-        transition: transform 400ms; }
-      main article.menu_1 p3 {
-        font-family: "Kalam", cursive;
-        font-size: 1.5em;
-        text-shadow: 0px 0px 1px #f78f6a;
-        transition: transform 400ms; }
-      main article.menu_1:hover > * {
-        transform: scale(1.2);
-        opacity: 0.8; }
-    main article.menu_2 {
-      background-color: #fcecfa; }
-      main article.menu_2 p2 {
-        font-family: "Playfair Display", serif;
-        font-size: 2.5em;
-        color: #c77412;
-        font-weight: 600;
-        transition: transform 400ms; }
-      main article.menu_2 p3 {
-        font-family: "Playfair Display", serif;
-        font-size: 1.5em;
-        /* FF3.6-15 */
-        display: inline-block;
-        background-image: linear-gradient(to right, #f15861, #905bfd);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        transition: transform 400ms; }
-      main article.menu_2:hover > * {
-        transform: scale(1.2);
-        opacity: 0.8; }
-    main article.menu_3 {
-      background-color: #f4eaea; }
-      main article.menu_3 p2 {
-        font-family: "Kalam", cursive;
-        font-size: 2.5em;
-        color: #2b91f8;
-        transition: transform 400ms; }
-      main article.menu_3 p3 {
-        font-family: "Dancing Script", cursive;
-        font-size: 2em;
-        /* FF3.6-15 */
-        display: inline-block;
-        background-image: linear-gradient(to bottom right, #0431df, #0887fb);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        transition: transform 400ms; }
-      main article.menu_3:hover > * {
-        transform: scale(1.2);
-        opacity: 0.8; }
-    main article.menu_4 {
-      background-color: #e3ebe3;
-      padding: 0; }
-      main article.menu_4 p2 {
-        font-family: "Kalam", cursive;
-        font-size: 2.5em;
-        color: #72bf56;
-        transition: transform 400ms; }
-      main article.menu_4 p3 {
-        font-family: "Kaushan Script", cursive;
-        font-size: 1.5em;
-        /* FF3.6-15 */
-        display: inline-block;
-        background-image: linear-gradient(to bottom right, #3d9339, #bfff7e);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        transition: transform 400ms; }
-      main article.menu_4:hover > * {
-        transform: scale(1.2);
-        opacity: 0.8; }
+header h1 {
+  color: #fdcb46;
+  font-size: 4em;
+  font-family: "Montserrat", sans-serif;
+}
 
 aside {
   width: 50%;
   margin: auto auto 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
-  background-color: #579c87; }
-  aside h2 {
-    color: #fdcb46;
-    font-size: 2.5em;
-    margin: 0.3em 0.3em;
-    font-family: "Montserrat", sans-serif; }
+  background-color: #579c87;
+}
+
+aside h2 {
+  color: #fdcb46;
+  font-size: 2.5em;
+  margin: 0.3em 0.3em;
+  font-family: "Montserrat", sans-serif;
+}
 
 footer {
   height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #579c87;
   margin-top: 10px;
   position: fixed;
   bottom: 0;
   left: auto;
-  width: 80%; }
-  footer p {
-    color: #fdcb46;
-    margin: 10px;
-    font-size: 1.6em;
-    font-family: "Montserrat", sans-serif; }
+  width: 80%;
+}
+
+footer p {
+  color: #fdcb46;
+  margin: 10px;
+  font-size: 1.6em;
+  font-family: "Montserrat", sans-serif;
+}
 
 /*spécificités des pages*/
+main {
+  margin: 1em 0 1em 0;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+  margin: auto;
+  grid-gap: 2em;
+  max-width: 900px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section a {
+  width: 300px;
+  height: 400px;
+}
+
+section a article {
+  /*1article = 1 menu*/
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section a article.menu_1 {
+  background-color: #fcdfdb;
+}
+
+section a article.menu_1 .icon {
+  font-size: 3em;
+  color: linear-gradient(to right, #f15861, #f78f6a);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_1 h2 {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 2.5em;
+  text-shadow: 0px 0px 2px #f78f6a;
+  margin: 0.2em 0;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_1 h3 {
+  font-family: "Kalam", cursive;
+  font-size: 1.5em;
+  text-shadow: 0px 0px 1px #f78f6a;
+  margin: 0.5em 0;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_1:hover > * {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
+}
+
+section a article.menu_2 {
+  background-color: #fcecfa;
+}
+
+section a article.menu_2 h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  color: #c77412;
+  font-weight: 600;
+  margin: 0.2em 0;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_2 h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#905bfd));
+  background-image: linear-gradient(to right, #f15861, #905bfd);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_2:hover > * {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
+}
+
+section a article.menu_3 {
+  background-color: #f4eaea;
+}
+
+section a article.menu_3 h2 {
+  font-family: "Kalam", cursive;
+  font-size: 2.5em;
+  color: #2b91f8;
+  margin: 0.2em 0;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_3 h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  background-image: linear-gradient(to bottom right, #0431df, #0887fb);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  width: 100%;
+  text-align: center;
+}
+
+section a article.menu_3:hover > * {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
+}
+
+section a article.menu_4 {
+  background-color: #e3ebe3;
+  padding: 0;
+}
+
+section a article.menu_4 h2 {
+  font-family: "Kalam", cursive;
+  font-size: 2.5em;
+  color: #72bf56;
+  margin: 0.2em 0;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_4 h3 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
+  background-image: linear-gradient(to bottom right, #3d9339, #bfff7e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+section a article.menu_4:hover > * {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
+}
+
 /*Blocs BEM indépendants*/
 .icon {
-  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#f78f6a));
   background-image: linear-gradient(to right, #f15861, #f78f6a);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text; }
+  background-clip: text;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

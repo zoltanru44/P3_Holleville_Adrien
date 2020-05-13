@@ -1,26 +1,36 @@
+/*variables, functions, mixin*/
 
-/*variables, fonctions, mixin*/
-/*linerar gradient from left to right*/
-@mixin gradient_right($clr_1,$clr_2){
-    display: inline-block;
-                 background-image: linear-gradient(to right,$clr_1,$clr_2);
-                 color:transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-}/*linerar gradient from top left to bottom right*/
-@mixin gradient_right_bottom($clr_1,$clr_2){
-    display: inline-block;
-                 background-image: linear-gradient(to bottom right,$clr_1,$clr_2);
-                 color:transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+
+/*linear gradient from left to right*/
+
+@mixin gradient_right($clr_1, $clr_2) {
+    background-image: linear-gradient(to right, $clr_1, $clr_2);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
+
+
+/*linear gradient from top left to bottom right*/
+
+@mixin gradient_right_bottom($clr_1, $clr_2) {
+    background-image: linear-gradient(to bottom right, $clr_1, $clr_2);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
 /*properties menu animations*/
-@mixin prop_anim_menu{
+
+@mixin prop_anim_menu {
     transition: transform 400ms;
 }
+
+
 /*animation hover menu*/
-@mixin anim_hover_menu{
+
+@mixin anim_hover_menu {
     transform: scale(1.2);
-        opacity: 0.8;
+    opacity: 0.8;
 }
