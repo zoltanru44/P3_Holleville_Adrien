@@ -19,22 +19,6 @@ header {
     }
 }
 
-aside {
-    width: 50%;
-    margin: auto auto 100px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: $clr-primary;
-    & h2 {
-        color: $clr_secondary;
-        font-size: 2.5em;
-        margin: 0.3em 0.3em;
-        font-family: $font_7;
-    }
-}
-
 footer {
     height: 70px;
     display: flex;
@@ -46,10 +30,14 @@ footer {
     bottom: 0;
     left: auto;
     width: 80%;
-    & p {
+    & a {
         color: $clr_secondary;
         margin: 10px;
         font-size: 1.6em;
         font-family: $font_7;
+        &:hover {
+            animation: wriggle 150ms cubic-bezier(.4, .1, .6, .9);
+            animation-iteration-count: 4;
+        }
     }
 }

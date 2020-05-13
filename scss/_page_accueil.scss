@@ -6,7 +6,7 @@ main {
 
 section {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 50% 50% / 1fr 1fr;
     margin: auto;
     grid-gap: 2em;
     max-width: 900px;
@@ -15,6 +15,7 @@ section {
     & a {
         width: 300px;
         height: 400px;
+        box-shadow: 3px 3px 5px #b2b2b2;
         & article {
             /*1article = 1 menu*/
             width: 100%;
@@ -107,10 +108,42 @@ section {
                     margin: 0.5em 0;
                     @include gradient_right_bottom($clr_grad_green_1, $clr_grad_green_2);
                     @include prop_anim_menu;
+                    width: 100%;
+                    text-align: center;
                 }
                 &:hover>* {
                     @include anim_hover_menu;
                 }
+            }
+        }
+    }
+}
+
+aside {
+    width: 50%;
+    margin: 50px auto 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: $clr-primary;
+    & p2 {
+        color: $clr_secondary;
+        font-size: 2.5em;
+        margin: 0.3em 0.3em;
+        font-family: $font_7;
+        & .dots {
+            animation: dots_apparition 2s both infinite;
+            animation-delay: 0s;
+            &::before {
+                content: ".";
+                animation: dots_apparition 2s both infinite;
+                animation-delay: -0.5s;
+            }
+            &::after {
+                content: ".";
+                animation: dots_apparition 2s both infinite;
+                animation-delay: 0.5s;
             }
         }
     }

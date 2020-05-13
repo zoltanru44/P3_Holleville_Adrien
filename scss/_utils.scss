@@ -34,3 +34,33 @@
     transform: scale(1.2);
     opacity: 0.8;
 }
+
+
+/*animation dot apparition*/
+
+@keyframes dots_apparition {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+
+/*wriggle effect*/
+
+@keyframes wriggle {
+    25% {
+        transform: rotate(6deg);
+    }
+    75% {
+        transform: rotate(-6deg);
+    }
+}
+
+
+/*underline effect*/
