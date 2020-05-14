@@ -39,29 +39,6 @@
                 position: relative;
                 overflow: hidden;
                 text-align: center;
-                &::before {
-                    /*left line*/
-                    position: absolute;
-                    top: 51%;
-                    overflow: hidden;
-                    width: 45%;
-                    height: 1px;
-                    content: "\a0";
-                    margin-left: -55%;
-                    text-align: right;
-                    background-color: $P1_clr_lines_title;
-                }
-                &::after {
-                    /*right line*/
-                    position: absolute;
-                    top: 51%;
-                    overflow: hidden;
-                    width: 45%;
-                    height: 1px;
-                    content: "\a0";
-                    background-color: $P1_clr_lines_title;
-                    margin-left: 10%;
-                }
                 &:hover {
                     @include underline_parameters($P1_clr_underline, $P1_underline_position)
                 }

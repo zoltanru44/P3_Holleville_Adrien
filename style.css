@@ -474,31 +474,6 @@ aside p2 .dots::after {
   text-align: center;
 }
 
-.main__section__table__title::before {
-  /*left line*/
-  position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 45%;
-  height: 1px;
-  content: "\a0";
-  margin-left: -55%;
-  text-align: right;
-  background-color: black;
-}
-
-.main__section__table__title::after {
-  /*right line*/
-  position: absolute;
-  top: 51%;
-  overflow: hidden;
-  width: 45%;
-  height: 1px;
-  content: "\a0";
-  background-color: black;
-  margin-left: 10%;
-}
-
 .main__section__table__title:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(5%, black), color-stop(6%, transparent)) no-repeat;
   background: linear-gradient(to top, black 0%, black 5%, transparent 6%) no-repeat;
