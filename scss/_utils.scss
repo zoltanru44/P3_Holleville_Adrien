@@ -36,6 +36,17 @@
 }
 
 
+/*underline mixin*/
+
+@mixin underline_parameters($underline_clr, $underline_position) {
+    background: linear-gradient(to top, $underline_clr 0%, $underline_clr 5%, transparent 6%) no-repeat;
+    background-position: left $underline_position bottom 2px;
+    background-origin: content-box;
+    animation: underline 1s;
+    animation-fill-mode: forwards;
+}
+
+
 /*animation dot apparition*/
 
 @keyframes dots_apparition {
@@ -64,3 +75,13 @@
 
 
 /*underline effect*/
+
+@keyframes underline {
+    0% {
+        background-size: 0 100%;
+    }
+    100% {
+        background-size: 30% 100%;
+        ;
+    }
+}

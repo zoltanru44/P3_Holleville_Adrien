@@ -17,24 +17,30 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        margin: 0 30%;
+        width: 80%;
         &__icon {
             font-size: 4em;
-            margin-top: 50px;
+            margin-top: 30px;
         }
         & h2 {
             font-family: $font_4;
+            margin-top: 0;
         }
         &__table {
-            width: 60%;
+            width: 80%;
+            margin-bottom: 30px;
+            & tr {
+                /*Table line height*/
+                height: 40px;
+            }
             &__title {
                 font-family: $font_3;
+                font-size: 1.5em;
                 position: relative;
                 overflow: hidden;
                 text-align: center;
                 &::before {
-                    /*right line*/
+                    /*left line*/
                     position: absolute;
                     top: 51%;
                     overflow: hidden;
@@ -43,28 +49,31 @@
                     content: "\a0";
                     margin-left: -55%;
                     text-align: right;
-                    background-color: black;
+                    background-color: $P1_clr_lines_title;
                 }
                 &::after {
-                    /*left line*/
+                    /*right line*/
                     position: absolute;
                     top: 51%;
                     overflow: hidden;
                     width: 45%;
                     height: 1px;
                     content: "\a0";
-                    background-color: black;
+                    background-color: $P1_clr_lines_title;
                     margin-left: 10%;
                 }
                 &:hover {
-                    animation: underline 1s;
+                    @include underline_parameters($P1_clr_underline, $P1_underline_position)
                 }
             }
             &__dish {
                 font-family: $font_1;
+                font-size: 1.2em;
             }
             &__price {
                 font-family: $font_1;
+                font-size: 1.2em;
+                font-weight: 600;
                 text-align: right;
             }
         }
@@ -72,12 +81,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 20px;
             & .icon {
                 font-size: 2em;
                 margin-right: 10px;
             }
             & h2 {
                 font-family: $font_4;
+                margin: auto;
             }
         }
     }

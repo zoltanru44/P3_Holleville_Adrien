@@ -5,11 +5,13 @@
 /*yellow*/
 /*gradient colors*/
 /*font*/
+/*P1 variables*/
 /*variables, functions, mixin*/
 /*linear gradient from left to right*/
 /*linear gradient from top left to bottom right*/
 /*properties menu animations*/
 /*animation hover menu*/
+/*underline mixin*/
 /*animation dot apparition*/
 @-webkit-keyframes dots_apparition {
   0% {
@@ -57,6 +59,23 @@
 }
 
 /*underline effect*/
+@-webkit-keyframes underline {
+  0% {
+    background-size: 0 100%;
+  }
+  100% {
+    background-size: 30% 100%;
+  }
+}
+@keyframes underline {
+  0% {
+    background-size: 0 100%;
+  }
+  100% {
+    background-size: 30% 100%;
+  }
+}
+
 /*Blocs BEM*/
 body {
   width: 80%;
@@ -143,11 +162,12 @@ section {
   -ms-grid-rows: 50% 50%;
   -ms-grid-columns: 1fr 1fr;
       grid-template: 50% 50% / 1fr 1fr;
-  margin: auto;
-  grid-gap: 2em;
+  margin: 5% auto;
+  gap: 1em;
   max-width: 900px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -423,32 +443,39 @@ aside p2 .dots::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  margin: 0 30%;
+  width: 80%;
 }
 
 .main__section__icon {
   font-size: 4em;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .main__section h2 {
   font-family: "Kalam", cursive;
+  margin-top: 0;
 }
 
 .main__section__table {
-  width: 60%;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.main__section__table tr {
+  /*Table line height*/
+  height: 40px;
 }
 
 .main__section__table__title {
   font-family: "Balsamiq Sans", cursive;
+  font-size: 1.5em;
   position: relative;
   overflow: hidden;
   text-align: center;
 }
 
 .main__section__table__title::before {
-  /*right line*/
+  /*left line*/
   position: absolute;
   top: 51%;
   overflow: hidden;
@@ -461,7 +488,7 @@ aside p2 .dots::after {
 }
 
 .main__section__table__title::after {
-  /*left line*/
+  /*right line*/
   position: absolute;
   top: 51%;
   overflow: hidden;
@@ -473,16 +500,25 @@ aside p2 .dots::after {
 }
 
 .main__section__table__title:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(5%, black), color-stop(6%, transparent)) no-repeat;
+  background: linear-gradient(to top, black 0%, black 5%, transparent 6%) no-repeat;
+  background-position: left 300px bottom 2px;
+  background-origin: content-box;
   -webkit-animation: underline 1s;
           animation: underline 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .main__section__table__dish {
   font-family: "Dancing Script", cursive;
+  font-size: 1.2em;
 }
 
 .main__section__table__price {
   font-family: "Dancing Script", cursive;
+  font-size: 1.2em;
+  font-weight: 600;
   text-align: right;
 }
 
@@ -496,6 +532,7 @@ aside p2 .dots::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 
 .main__section__foot_menu .icon {
@@ -505,5 +542,6 @@ aside p2 .dots::after {
 
 .main__section__foot_menu h2 {
   font-family: "Kalam", cursive;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

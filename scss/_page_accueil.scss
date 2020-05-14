@@ -7,10 +7,10 @@ main {
 section {
     display: grid;
     grid-template: 50% 50% / 1fr 1fr;
-    margin: auto;
-    grid-gap: 2em;
+    margin: 5% auto;
+    gap: 1em;
     max-width: 900px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     & a {
         width: 300px;
