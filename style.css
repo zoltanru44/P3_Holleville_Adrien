@@ -444,6 +444,7 @@ aside p2 .dots::after {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  margin-top: 0;
 }
 
 .P1_main__section__icon {
@@ -454,6 +455,7 @@ aside p2 .dots::after {
 .P1_main__section h2 {
   font-family: "Kalam", cursive;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .P1_main__section__table {
