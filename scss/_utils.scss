@@ -36,11 +36,11 @@
 }
 
 
-/*underline mixin*/
+/*underline parameters*/
 
-@mixin underline_parameters($underline_clr, $underline_position) {
+@mixin underline_parameters($underline_clr, ) {
     background: linear-gradient(to top, $underline_clr 0%, $underline_clr 5%, transparent 6%) no-repeat;
-    background-position: left $underline_position bottom 2px;
+    background-position: left 0 bottom 2px;
     background-origin: content-box;
     animation: underline 1s;
     animation-fill-mode: forwards;
@@ -81,7 +81,7 @@
         background-size: 0 100%;
     }
     100% {
-        background-size: 30% 100%;
+        background-size: 100% 100%;
         ;
     }
 }

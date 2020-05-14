@@ -1,4 +1,4 @@
-.main {
+.P1_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,15 +32,24 @@
             & tr {
                 /*Table line height*/
                 height: 40px;
+                width: 100%;
             }
             &__title {
                 font-family: $font_3;
                 font-size: 1.5em;
-                position: relative;
-                overflow: hidden;
-                text-align: center;
-                &:hover {
-                    @include underline_parameters($P1_clr_underline, $P1_underline_position)
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                &__line {
+                    width: 30%;
+                }
+                & h2 {
+                    margin: 0;
+                    &:hover {
+                        @include underline_parameters($P1_clr_underline)
+                    }
                 }
             }
             &__dish {
