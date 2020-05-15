@@ -1,4 +1,4 @@
-.P1_main {
+.P3_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
         }
     }
     &__section {
-        background-color: $clr_menu_1;
+        background-color: $clr_menu_3;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -31,10 +31,12 @@
                 ;
             }
         }
-        & h2 {
-            font-family: $font_4;
+        &__title {
+            font-family: $font_1;
             margin-top: 0;
             margin-bottom: 0;
+            font-size: 2.5em;
+            @include gradient_right_bottom($clr_grad_blue_1, $clr_grad_blue_2);
         }
         &__table {
             width: 80%;
@@ -62,8 +64,8 @@
                 }
             }
             &__caption {
-                font-family: $font_3;
-                font-size: 1.5em;
+                font-family: $font_4;
+                font-size: 0.6em;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -86,16 +88,16 @@
                 }
             }
             &__dish {
-                font-family: $font_1;
-                font-size: 1.2em;
+                font-family: $font_4;
+                font-size: 1em;
                 @include responsive_mobile {
                     text-align: center;
                     margin-bottom: 5px;
                 }
             }
             &__price {
-                font-family: $font_1;
-                font-size: 1.2em;
+                font-family: $font_4;
+                font-size: 1em;
                 font-weight: 600;
                 text-align: right;
                 @include responsive_mobile {
