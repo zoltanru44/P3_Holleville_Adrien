@@ -52,7 +52,7 @@
             }
             &__caption {
                 font-family: $font_6;
-                font-size: 0.7em;
+                font-size: 0.8em;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -68,9 +68,8 @@
                     }
                 }
                 & h2 {
-                    margin: 0;
-                    &:hover {
-                        @include underline_parameters($P1_clr_underline)
+                    @include responsive_mobile {
+                        margin-bottom: 10px;
                     }
                 }
             }
@@ -91,14 +90,30 @@
                     margin-bottom: 10px;
                 }
             }
+            /*underline and color ajustment*/
             & .P2_clr_entre {
                 color: $clr_P2_entre;
+                & h2 {
+                    &:hover {
+                        @include underline_parameters($clr_P2_entre)
+                    }
+                }
             }
             & .P2_clr_dish {
                 color: $clr_P2_dish;
+                & h2 {
+                    &:hover {
+                        @include underline_parameters($clr_P2_dish)
+                    }
+                }
             }
             & .P2_clr_dessert {
                 color: $clr_P2_dessert;
+                & h2 {
+                    &:hover {
+                        @include underline_parameters($clr_P2_dessert)
+                    }
+                }
             }
         }
         &__foot_menu {

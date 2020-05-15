@@ -738,6 +738,7 @@ aside h2 .dots::after {
 .P2_main__section__table {
   width: 80%;
   margin-bottom: 30px;
+  /*underline and color ajustment*/
 }
 
 @media screen and (max-width: 768px) {
@@ -781,7 +782,7 @@ aside h2 .dots::after {
 
 .P2_main__section__table__caption {
   font-family: "Playfair Display", serif;
-  font-size: 0.7em;
+  font-size: 0.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,19 +814,10 @@ aside h2 .dots::after {
   }
 }
 
-.P2_main__section__table__caption h2 {
-  margin: 0;
-}
-
-.P2_main__section__table__caption h2:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(5%, black), color-stop(6%, transparent)) no-repeat;
-  background: linear-gradient(to top, black 0%, black 5%, transparent 6%) no-repeat;
-  background-position: left 0 bottom 2px;
-  background-origin: content-box;
-  -webkit-animation: underline 1s;
-          animation: underline 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+@media screen and (max-width: 768px) {
+  .P2_main__section__table__caption h2 {
+    margin-bottom: 10px;
+  }
 }
 
 .P2_main__section__table__dish {
@@ -857,12 +849,45 @@ aside h2 .dots::after {
   color: #c67412;
 }
 
+.P2_main__section__table .P2_clr_entre h2:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#c67412), color-stop(5%, #c67412), color-stop(6%, transparent)) no-repeat;
+  background: linear-gradient(to top, #c67412 0%, #c67412 5%, transparent 6%) no-repeat;
+  background-position: left 0 bottom 2px;
+  background-origin: content-box;
+  -webkit-animation: underline 1s;
+          animation: underline 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .P2_main__section__table .P2_clr_dish {
   color: #a56799;
 }
 
+.P2_main__section__table .P2_clr_dish h2:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#a56799), color-stop(5%, #a56799), color-stop(6%, transparent)) no-repeat;
+  background: linear-gradient(to top, #a56799 0%, #a56799 5%, transparent 6%) no-repeat;
+  background-position: left 0 bottom 2px;
+  background-origin: content-box;
+  -webkit-animation: underline 1s;
+          animation: underline 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .P2_main__section__table .P2_clr_dessert {
   color: #6e4ccc;
+}
+
+.P2_main__section__table .P2_clr_dessert h2:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#6e4ccc), color-stop(5%, #6e4ccc), color-stop(6%, transparent)) no-repeat;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 5%, transparent 6%) no-repeat;
+  background-position: left 0 bottom 2px;
+  background-origin: content-box;
+  -webkit-animation: underline 1s;
+          animation: underline 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .P2_main__section__foot_menu {
