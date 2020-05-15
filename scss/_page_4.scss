@@ -1,0 +1,121 @@
+.P1_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    &__title {
+        display: flex;
+        font-family: $font_3;
+        & hr {
+            color: red;
+        }
+    }
+    &__section {
+        background-color: $clr_menu_1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 0;
+        @include responsive_mobile {
+            width: 100%;
+        }
+        &__icon {
+            font-size: 4em;
+            margin-top: 30px;
+            @include responsive_mobile {
+                font-size: 3em;
+                margin-top: 10px;
+                ;
+            }
+        }
+        & h2 {
+            font-family: $font_4;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        &__table {
+            width: 80%;
+            margin-bottom: 30px;
+            @include responsive_mobile {
+                width: 95%;
+                display: block;
+            }
+            & tr {
+                /*Table line height*/
+                height: 40px;
+                width: 100%;
+                @include responsive_mobile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                }
+            }
+            & tbody {
+                @include responsive_mobile {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            &__caption {
+                font-family: $font_3;
+                font-size: 1.5em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                @include responsive_mobile {
+                    justify-content: center;
+                }
+                &__line {
+                    width: 30%;
+                    @include responsive_mobile {
+                        display: none;
+                    }
+                }
+                & h2 {
+                    margin: 0;
+                    &:hover {
+                        @include underline_parameters($P1_clr_underline)
+                    }
+                }
+            }
+            &__dish {
+                font-family: $font_1;
+                font-size: 1.2em;
+                @include responsive_mobile {
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+            }
+            &__price {
+                font-family: $font_1;
+                font-size: 1.2em;
+                font-weight: 600;
+                text-align: right;
+                @include responsive_mobile {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &__foot_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            & .icon {
+                font-size: 2em;
+                margin-right: 10px;
+            }
+            & h2 {
+                font-family: $font_4;
+                margin: auto;
+            }
+        }
+    }
+}
