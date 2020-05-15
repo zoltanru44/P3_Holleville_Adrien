@@ -4,6 +4,10 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 20px auto;
+    @include responsive_mobile {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 header {
@@ -12,10 +16,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include responsive_mobile {
+        height: 100px;
+    }
     & h1 {
         color: $clr_secondary;
         font-size: 4em;
         font-family: $font_7;
+        @include responsive_mobile {
+            font-size: 3em;
+        }
     }
 }
 
@@ -30,11 +40,19 @@ footer {
     bottom: 0;
     left: auto;
     width: 80%;
+    @include responsive_mobile {
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
     & a {
         color: $clr_secondary;
         margin: 10px;
         font-size: 1.6em;
         font-family: $font_7;
+        @include responsive_mobile {
+            font-size: 1.2em;
+        }
         &:hover {
             animation: wriggle 150ms cubic-bezier(.4, .1, .6, .9);
             animation-iteration-count: 4;

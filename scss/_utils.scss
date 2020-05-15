@@ -47,6 +47,27 @@
 }
 
 
+/*mixin responsive*/
+
+@mixin responsive_mobile {
+    @media screen and (max-width: $media_smartphone) {
+        @content;
+    }
+}
+
+@mixin responsive_tablet {
+    @media screen and (min-width: $media_smartphone) and (max-width: $media_tablet) {
+        @content;
+    }
+}
+
+@mixin responsive_large_screen {
+    @media screen and (min-width: $media_large) {
+        @content;
+    }
+}
+
+
 /*animation dot apparition*/
 
 @keyframes dots_apparition {

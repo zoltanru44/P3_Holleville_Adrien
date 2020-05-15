@@ -4,18 +4,22 @@ main {
     margin: 1em 0 1em 0;
 }
 
-section {
+.section {
     display: grid;
     grid-template: 50% 50% / 1fr 1fr;
     margin: 5% auto;
     gap: 1em;
     max-width: 900px;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    & a {
+    @include responsive_mobile {
+        grid-template: 1fr/1fr;
+    }
+    &__link {
         width: 300px;
         height: 400px;
         box-shadow: 3px 3px 5px #b2b2b2;
+        margin: 0 5%;
         & article {
             /*1article = 1 menu*/
             width: 100%;
@@ -24,96 +28,100 @@ section {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            &.menu_1 {
-                background-color: $clr_menu_1;
-                & .icon {
-                    font-size: 3em;
-                    color: linear-gradient(to right, #f15861, #f78f6a);
-                    @include prop_anim_menu;
-                }
-                & h2 {
-                    font-family: $font_3;
-                    font-size: 2.5em;
-                    text-shadow: 0px 0px 2px $clr_txt_menu_1;
-                    margin: 0.2em 0;
-                    @include prop_anim_menu;
-                }
-                & h3 {
-                    font-family: $font_4;
-                    font-size: 1.5em;
-                    text-shadow: 0px 0px 1px $clr_txt_menu_1;
-                    margin: 0.5em 0;
-                    @include prop_anim_menu;
-                }
-                &:hover>* {
-                    @include anim_hover_menu;
-                }
+        }
+        &__menu_1 {
+            background-color: $clr_menu_1;
+            & .icon {
+                font-size: 3em;
+                color: linear-gradient(to right, #f15861, #f78f6a);
+                width: 100%;
+                text-align: center;
+                @include prop_anim_menu;
             }
-            &.menu_2 {
-                background-color: $clr_menu_2;
-                & h2 {
-                    font-family: $font_6;
-                    font-size: 2.5em;
-                    color: $clr_txt_menu_2;
-                    font-weight: 600;
-                    margin: 0.2em 0;
-                    @include prop_anim_menu;
-                }
-                & h3 {
-                    font-family: $font_6;
-                    font-size: 1.5em;
-                    margin: 0.5em 0;
-                    @include gradient_right($clr_grad_purple_1, $clr_grad_purple_2);
-                    @include prop_anim_menu;
-                }
-                &:hover>* {
-                    @include anim_hover_menu;
-                }
+            & h2 {
+                font-family: $font_3;
+                font-size: 2.5em;
+                text-shadow: 0px 0px 2px $clr_txt_menu_1;
+                margin: 0.2em 0;
+                @include prop_anim_menu;
             }
-            &.menu_3 {
-                background-color: $clr_menu_3;
-                & h2 {
-                    font-family: $font_4;
-                    font-size: 2.5em;
-                    color: $clr_txt_menu_3;
-                    margin: 0.2em 0;
-                    @include prop_anim_menu;
-                }
-                & h3 {
-                    font-family: $font_1;
-                    font-size: 1.5em;
-                    margin: 0.5em 0;
-                    @include gradient_right_bottom($clr_grad_blue_1, $clr_grad_blue_2);
-                    @include prop_anim_menu;
-                    width: 100%;
-                    text-align: center;
-                }
-                &:hover>* {
-                    @include anim_hover_menu;
-                }
+            & h3 {
+                font-family: $font_4;
+                font-size: 1.5em;
+                text-shadow: 0px 0px 1px $clr_txt_menu_1;
+                margin: 0.5em 0;
+                @include prop_anim_menu;
             }
-            &.menu_4 {
-                background-color: $clr_menu_4;
-                padding: 0;
-                & h2 {
-                    font-family: $font_4;
-                    font-size: 2.5em;
-                    color: $clr_txt_menu_4;
-                    margin: 0.2em 0;
-                    @include prop_anim_menu;
-                }
-                & h3 {
-                    font-family: $font_2;
-                    font-size: 1.5em;
-                    margin: 0.5em 0;
-                    @include gradient_right_bottom($clr_grad_green_1, $clr_grad_green_2);
-                    @include prop_anim_menu;
-                    width: 100%;
-                    text-align: center;
-                }
-                &:hover>* {
-                    @include anim_hover_menu;
-                }
+            &:hover>* {
+                @include anim_hover_menu;
+            }
+        }
+        &__menu_2 {
+            background-color: $clr_menu_2;
+            & h2 {
+                font-family: $font_6;
+                font-size: 2.5em;
+                color: $clr_txt_menu_2;
+                font-weight: 600;
+                margin: 0.2em 0;
+                @include prop_anim_menu;
+            }
+            & h3 {
+                font-family: $font_6;
+                font-size: 1.5em;
+                margin: 0.5em 0;
+                width: 100%;
+                text-align: center;
+                @include gradient_right($clr_grad_purple_1, $clr_grad_purple_2);
+                @include prop_anim_menu;
+            }
+            &:hover>* {
+                @include anim_hover_menu;
+            }
+        }
+        &__menu_3 {
+            background-color: $clr_menu_3;
+            & h2 {
+                font-family: $font_4;
+                font-size: 2.5em;
+                color: $clr_txt_menu_3;
+                margin: 0.2em 0;
+                @include prop_anim_menu;
+            }
+            & h3 {
+                font-family: $font_1;
+                font-size: 1.5em;
+                margin: 0.5em 0;
+                @include gradient_right_bottom($clr_grad_blue_1, $clr_grad_blue_2);
+                @include prop_anim_menu;
+                width: 100%;
+                text-align: center;
+            }
+            &:hover>* {
+                @include anim_hover_menu;
+            }
+        }
+        &__menu_4 {
+            background-color: $clr_menu_4;
+            padding: 0;
+            & h2 {
+                font-family: $font_4;
+                font-size: 2.5em;
+                color: $clr_txt_menu_4;
+                margin: 0.2em 0;
+                @include prop_anim_menu;
+            }
+            & h3 {
+                font-family: $font_2;
+                font-size: 1.5em;
+                margin: 0.5em 0;
+                @include gradient_right_bottom($clr_grad_green_1, $clr_grad_green_2);
+                @include prop_anim_menu;
+                width: 100%;
+                text-align: center;
+            }
+            &:hover>* {
+                @include anim_hover_menu;
             }
         }
     }
@@ -127,11 +135,18 @@ aside {
     align-items: center;
     border-radius: 10px;
     background-color: $clr-primary;
-    & p2 {
+    @include responsive_mobile {
+        width: 80%;
+        margin-top: 30px;
+    }
+    & h2 {
         color: $clr_secondary;
         font-size: 2.5em;
         margin: 0.3em 0.3em;
         font-family: $font_7;
+        @include responsive_mobile {
+            font-size: 1.5em;
+        }
         & .dots {
             animation: dots_apparition 2s both infinite;
             animation-delay: 0s;
