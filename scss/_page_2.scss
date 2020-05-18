@@ -28,6 +28,10 @@
         &__table {
             width: 80%;
             margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             @include responsive_mobile {
                 width: 95%;
                 display: block;
@@ -36,6 +40,8 @@
                 /*Table line height*/
                 height: 40px;
                 width: 100%;
+                display: flex;
+                justify-content: space-between;
                 @include responsive_mobile {
                     display: flex;
                     flex-direction: column;
@@ -45,6 +51,10 @@
                 }
             }
             & tbody {
+                display: flex;
+                width: 90%;
+                flex-direction: column;
+                justify-content: center;
                 @include responsive_mobile {
                     width: 100%;
                     display: block;
@@ -95,7 +105,7 @@
                 color: $clr_P2_entre;
                 & h2 {
                     &:hover {
-                        @include underline_parameters($clr_P2_entre)
+                        @include underline_parameters($clr_P2_entre, 0px)
                     }
                 }
             }
@@ -103,7 +113,7 @@
                 color: $clr_P2_dish;
                 & h2 {
                     &:hover {
-                        @include underline_parameters($clr_P2_dish)
+                        @include underline_parameters($clr_P2_dish, 0px)
                     }
                 }
             }
@@ -111,7 +121,7 @@
                 color: $clr_P2_dessert;
                 & h2 {
                     &:hover {
-                        @include underline_parameters($clr_P2_dessert)
+                        @include underline_parameters($clr_P2_dessert, 0px)
                     }
                 }
             }

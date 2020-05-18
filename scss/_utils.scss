@@ -38,9 +38,9 @@
 
 /*underline parameters*/
 
-@mixin underline_parameters($underline_clr, ) {
+@mixin underline_parameters($underline_clr, $underline_position) {
     background: linear-gradient(to top, $underline_clr 0%, $underline_clr 5%, transparent 6%) no-repeat;
-    background-position: left 0 bottom 2px;
+    background-position: left 0 bottom $underline_position;
     background-origin: content-box;
     animation: underline 1s;
     animation-fill-mode: forwards;

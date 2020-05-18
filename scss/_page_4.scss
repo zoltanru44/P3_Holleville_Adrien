@@ -1,4 +1,4 @@
-.P1_main {
+.P4_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,12 +7,9 @@
     &__title {
         display: flex;
         font-family: $font_3;
-        & hr {
-            color: red;
-        }
     }
     &__section {
-        background-color: $clr_menu_1;
+        background-color: $clr_menu_3;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,23 +19,22 @@
         @include responsive_mobile {
             width: 100%;
         }
-        &__icon {
-            font-size: 4em;
-            margin-top: 30px;
-            @include responsive_mobile {
-                font-size: 3em;
-                margin-top: 10px;
-                ;
-            }
-        }
-        & h2 {
-            font-family: $font_4;
+        &__title {
+            font-family: $font_2;
             margin-top: 0;
             margin-bottom: 0;
+            font-size: 2.5em;
+            width: 100%;
+            text-align: center;
+            @include gradient_right_bottom($clr_grad_green_1, $clr_grad_green_2);
         }
         &__table {
             width: 80%;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             @include responsive_mobile {
                 width: 95%;
                 display: block;
@@ -47,6 +43,8 @@
                 /*Table line height*/
                 height: 40px;
                 width: 100%;
+                display: flex;
+                justify-content: space-between;
                 @include responsive_mobile {
                     display: flex;
                     flex-direction: column;
@@ -56,14 +54,18 @@
                 }
             }
             & tbody {
+                display: flex;
+                width: 90%;
+                flex-direction: column;
+                justify-content: center;
                 @include responsive_mobile {
-                    width: 100%;
                     display: block;
+                    width: 100%;
                 }
             }
             &__caption {
-                font-family: $font_3;
-                font-size: 1.5em;
+                font-family: $font_8;
+                font-size: 1em;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -81,21 +83,21 @@
                 & h2 {
                     margin: 0;
                     &:hover {
-                        @include underline_parameters($P1_clr_underline)
+                        @include underline_parameters($P1_clr_underline, 0px);
                     }
                 }
             }
             &__dish {
-                font-family: $font_1;
-                font-size: 1.2em;
+                font-family: $font_5;
+                font-size: 1em;
                 @include responsive_mobile {
                     text-align: center;
                     margin-bottom: 5px;
                 }
             }
             &__price {
-                font-family: $font_1;
-                font-size: 1.2em;
+                font-family: $font_8;
+                font-size: 1.5em;
                 font-weight: 600;
                 text-align: right;
                 @include responsive_mobile {
