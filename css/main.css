@@ -113,14 +113,14 @@ header {
   }
 }
 
-header h1 {
+header .main_title {
   color: #fdcb46;
-  font-size: 4em;
+  font-size: 2em;
   font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
-  header h1 {
+  header .main_title {
     font-size: 3em;
   }
 }
@@ -1369,6 +1369,7 @@ aside h2 .dots::after {
 .P4_main__section__table__dish {
   font-family: "Pangolin", cursive;
   font-size: 1em;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1383,6 +1384,7 @@ aside h2 .dots::after {
   font-size: 1.5em;
   font-weight: 600;
   text-align: right;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {

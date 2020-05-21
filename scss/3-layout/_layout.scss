@@ -19,9 +19,9 @@ header {
     @include responsive_mobile {
         height: 100px;
     }
-    & h1 {
+    & .main_title {
         color: $clr_secondary;
-        font-size: 4em;
+        font-size: 2em;
         font-family: $font_7;
         @include responsive_mobile {
             font-size: 3em;
