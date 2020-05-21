@@ -41,7 +41,7 @@
             }
             & tr {
                 /*Table line height*/
-                height: auto;
+                height: 100%;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -101,12 +101,20 @@
             &__dish {
                 font-family: $font_4;
                 font-size: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 @include responsive_mobile {
                     text-align: center;
                     margin-bottom: 5px;
                 }
             }
             &__price {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 font-family: $font_4;
                 font-size: 1em;
                 font-weight: 600;

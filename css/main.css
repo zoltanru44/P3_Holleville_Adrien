@@ -254,6 +254,7 @@ main {
   color: linear-gradient(to right, #f15861, #f78f6a);
   width: 100%;
   text-align: center;
+  line-height: 1.2;
   -webkit-transition: -webkit-transform 400ms;
   transition: -webkit-transform 400ms;
   transition: transform 400ms;
@@ -669,6 +670,19 @@ aside h2 .dots::after {
 .P1_main__section__table__dish {
   font-family: "Dancing Script", cursive;
   font-size: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -679,10 +693,24 @@ aside h2 .dots::after {
 }
 
 .P1_main__section__table__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Dancing Script", cursive;
   font-size: 1.2em;
   font-weight: 600;
   text-align: right;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -902,6 +930,19 @@ aside h2 .dots::after {
 .P2_main__section__table__dish {
   font-family: "Playfair Display", serif;
   font-size: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -912,6 +953,19 @@ aside h2 .dots::after {
 }
 
 .P2_main__section__table__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Playfair Display", serif;
   font-size: 0.9em;
   font-weight: 600;
@@ -1059,7 +1113,7 @@ aside h2 .dots::after {
 
 .P3_main__section__table tr {
   /*Table line height*/
-  height: auto;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,6 +1235,19 @@ aside h2 .dots::after {
 .P3_main__section__table__dish {
   font-family: "Kalam", cursive;
   font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1191,6 +1258,19 @@ aside h2 .dots::after {
 }
 
 .P3_main__section__table__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Kalam", cursive;
   font-size: 1em;
   font-weight: 600;
@@ -1410,6 +1490,19 @@ aside h2 .dots::after {
   font-family: "Pangolin", cursive;
   font-size: 1em;
   margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1425,10 +1518,29 @@ aside h2 .dots::after {
   font-weight: 600;
   text-align: right;
   margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
   .P4_main__section__table__price {
     margin-bottom: 15px;
   }
+}
+
+.mentions {
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
 }

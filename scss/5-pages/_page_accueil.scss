@@ -36,6 +36,7 @@ main {
                 color: linear-gradient(to right, #f15861, #f78f6a);
                 width: 100%;
                 text-align: center;
+                line-height: 1.2;
                 @include prop_anim_menu;
             }
             & h2 {
