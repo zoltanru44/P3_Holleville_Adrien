@@ -35,17 +35,19 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: $clr_primary;
-    margin-top: 10px;
     position: fixed;
     bottom: 0;
-    left: auto;
+    left: 50%;
+    transform: translateX(-50%);
     width: 80%;
+    max-width: 1200px;
     @include responsive_mobile {
         width: 100%;
         flex-direction: column;
         padding-bottom: 10px;
     }
     & a {
+        position: relative;
         color: $clr_secondary;
         margin: 10px;
         font-size: 1.6em;

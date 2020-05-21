@@ -148,19 +148,19 @@ aside {
         @include responsive_mobile {
             font-size: 1.5em;
         }
-        & .dots {
+        & .dot_1 {
             animation: dots_apparition 2s both infinite;
             animation-delay: 0s;
-            &::before {
-                content: ".";
-                animation: dots_apparition 2s both infinite;
-                animation-delay: -0.5s;
-            }
-            &::after {
-                content: ".";
-                animation: dots_apparition 2s both infinite;
-                animation-delay: 0.5s;
-            }
+        }
+        & .dot_2 {
+            content: ".";
+            animation: dots_apparition 2s both infinite;
+            animation-delay: 0.5s;
+        }
+        & .dot_3 {
+            content: ".";
+            animation: dots_apparition 2s both infinite;
+            animation-delay: 1s;
         }
     }
 }

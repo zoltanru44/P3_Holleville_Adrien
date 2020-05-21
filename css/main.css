@@ -137,11 +137,13 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   background-color: #579c87;
-  margin-top: 10px;
   position: fixed;
   bottom: 0;
-  left: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 80%;
+  max-width: 1200px;
 }
 
 @media screen and (max-width: 768px) {
@@ -156,6 +158,7 @@ footer {
 }
 
 footer a {
+  position: relative;
   color: #fdcb46;
   margin: 10px;
   font-size: 1.6em;
@@ -441,27 +444,27 @@ aside h2 {
   }
 }
 
-aside h2 .dots {
+aside h2 .dot_1 {
   -webkit-animation: dots_apparition 2s both infinite;
           animation: dots_apparition 2s both infinite;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
-aside h2 .dots::before {
-  content: ".";
-  -webkit-animation: dots_apparition 2s both infinite;
-          animation: dots_apparition 2s both infinite;
-  -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
-}
-
-aside h2 .dots::after {
+aside h2 .dot_2 {
   content: ".";
   -webkit-animation: dots_apparition 2s both infinite;
           animation: dots_apparition 2s both infinite;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
+}
+
+aside h2 .dot_3 {
+  content: ".";
+  -webkit-animation: dots_apparition 2s both infinite;
+          animation: dots_apparition 2s both infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .P1_main {
