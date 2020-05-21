@@ -37,6 +37,7 @@ footer {
     background-color: $clr_primary;
     position: fixed;
     bottom: 0;
+    top: auto;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;

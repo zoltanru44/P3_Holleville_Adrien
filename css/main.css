@@ -139,6 +139,7 @@ footer {
   background-color: #579c87;
   position: fixed;
   bottom: 0;
+  top: auto;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -790,8 +791,9 @@ aside h2 .dot_3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 90%;
   margin-top: 0;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -802,8 +804,8 @@ aside h2 .dot_3 {
 
 .P2_main__section__title {
   font-family: "Playfair Display", serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#905bfd));
   background-image: linear-gradient(to right, #f15861, #905bfd);
   color: transparent;
@@ -812,7 +814,7 @@ aside h2 .dot_3 {
 }
 
 .P2_main__section__table {
-  width: 80%;
+  width: 100%;
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,8 +1073,9 @@ aside h2 .dot_3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 90%;
   margin-top: 0;
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1083,8 +1086,8 @@ aside h2 .dot_3 {
 
 .P3_main__section__title {
   font-family: "Dancing Script", cursive;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 2.5em;
   width: 100%;
   text-align: center;
@@ -1096,7 +1099,7 @@ aside h2 .dot_3 {
 }
 
 .P3_main__section__table {
-  width: 80%;
+  width: 100%;
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1331,8 +1334,9 @@ aside h2 .dot_3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 90%;
   margin-top: 0;
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1343,8 +1347,8 @@ aside h2 .dot_3 {
 
 .P4_main__section__title {
   font-family: "Kaushan Script", cursive;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 2.5em;
   width: 100%;
   text-align: center;
@@ -1356,8 +1360,8 @@ aside h2 .dot_3 {
 }
 
 .P4_main__section__table {
-  width: 80%;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -14,22 +14,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 90%;
         margin-top: 0;
+        padding-bottom: 100px;
         @include responsive_mobile {
             width: 100%;
         }
         &__title {
             font-family: $font_1;
-            margin-top: 0;
-            margin-bottom: 0;
+            margin-top: 30px;
+            margin-bottom: 30px;
             font-size: 2.5em;
             width: 100%;
             text-align: center;
             @include gradient_right_bottom($clr_grad_blue_1, $clr_grad_blue_2);
         }
         &__table {
-            width: 80%;
+            width: 100%;
             margin-bottom: 30px;
             display: flex;
             flex-direction: column;
