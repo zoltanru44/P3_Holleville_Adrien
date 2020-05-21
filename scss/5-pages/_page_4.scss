@@ -30,7 +30,7 @@
             @include gradient_right_bottom($clr_grad_green_1, $clr_grad_green_2);
         }
         &__table {
-            width: 100%;
+            width: 90%;
             margin-bottom: 30px;
             display: flex;
             flex-direction: column;
@@ -57,7 +57,7 @@
             }
             & tbody {
                 display: flex;
-                width: 90%;
+                width: 85%;
                 flex-direction: column;
                 justify-content: center;
                 @include responsive_mobile {

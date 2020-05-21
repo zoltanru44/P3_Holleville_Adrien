@@ -54,7 +54,7 @@
             }
             & tbody {
                 display: flex;
-                width: 90%;
+                width: 80%;
                 flex-direction: column;
                 justify-content: center;
                 @include responsive_mobile {
@@ -68,7 +68,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 100%;
+                width: 90%;
                 padding: 0;
                 @media screen and (min-width: $media_smartphone) and (max-width: 867px) {
                     font-size: 0.8em;
