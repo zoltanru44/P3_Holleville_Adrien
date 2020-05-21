@@ -121,7 +121,7 @@ header .main_title {
 
 @media screen and (max-width: 768px) {
   header .main_title {
-    font-size: 3em;
+    font-size: 1.5em;
   }
 }
 
@@ -555,7 +555,7 @@ aside h2 .dots::after {
 
 .P1_main__section__table tr {
   /*Table line height*/
-  height: 40px;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +563,7 @@ aside h2 .dots::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -618,6 +619,18 @@ aside h2 .dots::after {
           align-items: center;
   width: 100%;
   padding: 0;
+}
+
+@media screen and (min-width: 860px) and (max-width: 1020px) {
+  .P1_main__section__table__caption {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 860px) {
+  .P1_main__section__table__caption {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -789,7 +802,7 @@ aside h2 .dots::after {
 
 .P2_main__section__table tr {
   /*Table line height*/
-  height: 40px;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,6 +810,7 @@ aside h2 .dots::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -853,6 +867,12 @@ aside h2 .dots::after {
           align-items: center;
   width: 100%;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 867px) {
+  .P2_main__section__table__caption {
+    font-size: 0.7em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1039,7 +1059,7 @@ aside h2 .dots::after {
 
 .P3_main__section__table tr {
   /*Table line height*/
-  height: 40px;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1047,6 +1067,7 @@ aside h2 .dots::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1103,6 +1124,18 @@ aside h2 .dots::after {
           align-items: center;
   width: 100%;
   padding: 0;
+}
+
+@media screen and (min-width: 800px) and (max-width: 991px) {
+  .P3_main__section__table__caption {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 799px) {
+  .P3_main__section__table__caption {
+    font-size: 0.6em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1268,6 +1301,7 @@ aside h2 .dots::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1324,6 +1358,12 @@ aside h2 .dots::after {
           align-items: center;
   width: 100%;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+  .P4_main__section__table__caption {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 768px) {

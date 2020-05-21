@@ -38,10 +38,11 @@
             }
             & tr {
                 /*Table line height*/
-                height: 40px;
+                height: auto;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 10px;
                 @include responsive_mobile {
                     display: flex;
                     flex-direction: column;
@@ -68,6 +69,9 @@
                 align-items: center;
                 width: 100%;
                 padding: 0;
+                @media screen and (min-width: $media_smartphone) and (max-width: 867px) {
+                    font-size: 0.7em;
+                }
                 @include responsive_mobile {
                     justify-content: center;
                 }

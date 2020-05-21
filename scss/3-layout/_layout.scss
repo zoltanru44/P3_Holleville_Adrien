@@ -24,7 +24,7 @@ header {
         font-size: 2em;
         font-family: $font_7;
         @include responsive_mobile {
-            font-size: 3em;
+            font-size: 1.5em;
         }
     }
 }
