@@ -1,4 +1,4 @@
-.P3_main {
+.P2_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,10 +6,10 @@
     margin-bottom: 100px;
     &__title {
         display: flex;
-        font-family: $font_3;
+        font-family: $font_6;
     }
     &__section {
-        background-color: $clr_menu_3;
+        background-color: $clr_menu_2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,13 +20,10 @@
             width: 100%;
         }
         &__title {
-            font-family: $font_1;
-            margin-top: 0;
-            margin-bottom: 0;
-            font-size: 2.5em;
-            width: 100%;
-            text-align: center;
-            @include gradient_right_bottom($clr_grad_blue_1, $clr_grad_blue_2);
+            font-family: $font_6;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            @include gradient_right($clr_grad_purple_1, $clr_grad_purple_2);
         }
         &__table {
             width: 80%;
@@ -64,8 +61,8 @@
                 }
             }
             &__caption {
-                font-family: $font_4;
-                font-size: 0.9em;
+                font-family: $font_6;
+                font-size: 0.8em;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -75,48 +72,58 @@
                     justify-content: center;
                 }
                 &__line {
-                    width: 30%;
+                    width: 25%;
                     @include responsive_mobile {
                         display: none;
                     }
                 }
                 & h2 {
-                    margin: 0;
-                    &:hover {
-                        @include underline_parameters($P1_clr_underline, 0px)
+                    @include responsive_mobile {
+                        margin-bottom: 10px;
                     }
                 }
             }
             &__dish {
-                font-family: $font_4;
-                font-size: 1em;
+                font-family: $font_6;
+                font-size: 0.9em;
                 @include responsive_mobile {
                     text-align: center;
                     margin-bottom: 5px;
                 }
             }
             &__price {
-                font-family: $font_4;
-                font-size: 1em;
+                font-family: $font_6;
+                font-size: 0.9em;
                 font-weight: 600;
                 text-align: right;
                 @include responsive_mobile {
                     margin-bottom: 10px;
                 }
             }
-        }
-        &__foot_menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            & .icon {
-                font-size: 2em;
-                margin-right: 10px;
+            /*underline and color ajustment*/
+            & .P2_clr_entre {
+                color: $clr_P2_entre;
+                & h2 {
+                    &:hover {
+                        @include underline_parameters($clr_P2_entre, 0px)
+                    }
+                }
             }
-            & h2 {
-                font-family: $font_4;
-                margin: auto;
+            & .P2_clr_dish {
+                color: $clr_P2_dish;
+                & h2 {
+                    &:hover {
+                        @include underline_parameters($clr_P2_dish, 0px)
+                    }
+                }
+            }
+            & .P2_clr_dessert {
+                color: $clr_P2_dessert;
+                & h2 {
+                    &:hover {
+                        @include underline_parameters($clr_P2_dessert, 0px)
+                    }
+                }
             }
         }
     }

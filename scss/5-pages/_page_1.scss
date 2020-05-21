@@ -35,6 +35,10 @@
             font-family: $font_4;
             margin-top: 0;
             margin-bottom: 0;
+            @include responsive_mobile {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
         }
         &__table {
             width: 80%;
@@ -95,7 +99,7 @@
                 font-size: 1.2em;
                 @include responsive_mobile {
                     text-align: center;
-                    margin-bottom: 5px;
+                    margin-bottom: 10px;
                 }
             }
             &__price {
@@ -104,7 +108,7 @@
                 font-weight: 600;
                 text-align: right;
                 @include responsive_mobile {
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                 }
             }
         }

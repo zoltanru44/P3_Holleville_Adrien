@@ -65,7 +65,7 @@
             }
             &__caption {
                 font-family: $font_8;
-                font-size: 1em;
+                font-size: 1.2em;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -82,6 +82,10 @@
                 }
                 & h2 {
                     margin: 0;
+                    @include responsive_mobile {
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                    }
                     &:hover {
                         @include underline_parameters($P1_clr_underline, 0px);
                     }
@@ -101,22 +105,8 @@
                 font-weight: 600;
                 text-align: right;
                 @include responsive_mobile {
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
-            }
-        }
-        &__foot_menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            & .icon {
-                font-size: 2em;
-                margin-right: 10px;
-            }
-            & h2 {
-                font-family: $font_4;
-                margin: auto;
             }
         }
     }

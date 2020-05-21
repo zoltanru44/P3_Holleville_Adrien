@@ -534,6 +534,13 @@ aside h2 .dots::after {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .P1_main__section h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 .P1_main__section__table {
   width: 80%;
   margin-bottom: 30px;
@@ -654,7 +661,7 @@ aside h2 .dots::after {
 @media screen and (max-width: 768px) {
   .P1_main__section__table__dish {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 }
 
@@ -667,7 +674,7 @@ aside h2 .dots::after {
 
 @media screen and (max-width: 768px) {
   .P1_main__section__table__price {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -942,34 +949,6 @@ aside h2 .dots::after {
           animation-fill-mode: forwards;
 }
 
-.P2_main__section__foot_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.P2_main__section__foot_menu .icon {
-  font-size: 2em;
-  margin-right: 10px;
-}
-
-.P2_main__section__foot_menu h2 {
-  font-family: "Playfair Display", serif;
-  margin: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#905bfd));
-  background-image: linear-gradient(to right, #f15861, #905bfd);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
 .P3_main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1148,6 +1127,13 @@ aside h2 .dots::after {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .P3_main__section__table__caption h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .P3_main__section__table__caption h2:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(5%, black), color-stop(6%, transparent)) no-repeat;
   background: linear-gradient(to top, black 0%, black 5%, transparent 6%) no-repeat;
@@ -1180,31 +1166,8 @@ aside h2 .dots::after {
 
 @media screen and (max-width: 768px) {
   .P3_main__section__table__price {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
-}
-
-.P3_main__section__foot_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.P3_main__section__foot_menu .icon {
-  font-size: 2em;
-  margin-right: 10px;
-}
-
-.P3_main__section__foot_menu h2 {
-  font-family: "Kalam", cursive;
-  margin: auto;
 }
 
 .P4_main {
@@ -1349,7 +1312,7 @@ aside h2 .dots::after {
 
 .P4_main__section__table__caption {
   font-family: "Caveat", cursive;
-  font-size: 1em;
+  font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1385,6 +1348,13 @@ aside h2 .dots::after {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .P4_main__section__table__caption h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
 .P4_main__section__table__caption h2:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(5%, black), color-stop(6%, transparent)) no-repeat;
   background: linear-gradient(to top, black 0%, black 5%, transparent 6%) no-repeat;
@@ -1417,30 +1387,6 @@ aside h2 .dots::after {
 
 @media screen and (max-width: 768px) {
   .P4_main__section__table__price {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
-
-.P4_main__section__foot_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.P4_main__section__foot_menu .icon {
-  font-size: 2em;
-  margin-right: 10px;
-}
-
-.P4_main__section__foot_menu h2 {
-  font-family: "Kalam", cursive;
-  margin: auto;
-}
-/*# sourceMappingURL=style.css.map */
