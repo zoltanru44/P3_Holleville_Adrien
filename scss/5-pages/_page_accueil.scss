@@ -136,6 +136,9 @@ aside {
     align-items: center;
     border-radius: 10px;
     background-color: $clr-primary;
+    @include responsive_tablet {
+        width: 70%;
+    }
     @include responsive_mobile {
         width: 80%;
         margin-top: 30px;
