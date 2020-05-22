@@ -6,7 +6,6 @@
 @mixin gradient_right($clr_1, $clr_2) {
     background-image: linear-gradient(to right, $clr_1, $clr_2);
     color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
 }
 
@@ -16,7 +15,6 @@
 @mixin gradient_right_bottom($clr_1, $clr_2) {
     background-image: linear-gradient(to bottom right, $clr_1, $clr_2);
     color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
 }
 
