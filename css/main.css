@@ -185,7 +185,6 @@ footer a:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#f78f6a));
   background-image: linear-gradient(to right, #f15861, #f78f6a);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -318,7 +317,6 @@ main {
   background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#905bfd));
   background-image: linear-gradient(to right, #f15861, #905bfd);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-transition: -webkit-transform 400ms;
   transition: -webkit-transform 400ms;
@@ -354,7 +352,6 @@ main {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   background-image: linear-gradient(to bottom right, #0431df, #0887fb);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-transition: -webkit-transform 400ms;
   transition: -webkit-transform 400ms;
@@ -393,7 +390,6 @@ main {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
   background-image: linear-gradient(to bottom right, #3d9339, #bfff7e);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-transition: -webkit-transform 400ms;
   transition: -webkit-transform 400ms;
@@ -813,7 +809,6 @@ aside h2 .dot_3 {
   background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#905bfd));
   background-image: linear-gradient(to right, #f15861, #905bfd);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -1098,7 +1093,6 @@ aside h2 .dot_3 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   background-image: linear-gradient(to bottom right, #0431df, #0887fb);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -1359,7 +1353,6 @@ aside h2 .dot_3 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
   background-image: linear-gradient(to bottom right, #3d9339, #bfff7e);
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
 }
 
