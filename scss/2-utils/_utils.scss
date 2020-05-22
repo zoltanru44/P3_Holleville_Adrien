@@ -7,6 +7,7 @@
     background-image: linear-gradient(to right, $clr_1, $clr_2);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 
@@ -16,6 +17,7 @@
     background-image: linear-gradient(to bottom right, $clr_1, $clr_2);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 
