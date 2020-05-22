@@ -180,6 +180,7 @@ footer a:hover {
 }
 
 /*Blocs BEM */
+/*color gradient on icon*/
 .icon {
   background-image: -webkit-gradient(linear, left top, right top, from(#f15861), to(#f78f6a));
   background-image: linear-gradient(to right, #f15861, #f78f6a);
@@ -254,7 +255,6 @@ main {
 
 .section__link__menu_1 .icon {
   font-size: 3em;
-  color: linear-gradient(to right, #f15861, #f78f6a);
   width: 100%;
   text-align: center;
   line-height: 1.2;
