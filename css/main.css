@@ -292,6 +292,14 @@ main {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 768px) {
+  .section__link__menu_1:hover > * {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .section__link__menu_2 {
   background-color: #fcecfa;
 }
@@ -328,6 +336,14 @@ main {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .section__link__menu_2:hover > * {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .section__link__menu_3 {
@@ -367,6 +383,14 @@ main {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 768px) {
+  .section__link__menu_3:hover > * {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .section__link__menu_4 {
   background-color: #e3ebe3;
   padding: 0;
@@ -403,6 +427,14 @@ main {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .section__link__menu_4:hover > * {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
 aside {
